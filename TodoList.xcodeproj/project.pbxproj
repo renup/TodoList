@@ -57,13 +57,11 @@
 		7CC14D8E2A3E280800B8B477 /* TodoList */ = {
 			isa = PBXGroup;
 			children = (
+				7CC14DA42A3F1E3A00B8B477 /* ViewModel */,
+				7CC14DA32A3F1E1C00B8B477 /* Views */,
 				7CC14D8F2A3E280800B8B477 /* TodoListApp.swift */,
-				7CC14D9D2A3E28F700B8B477 /* TodoListViewModel.swift */,
-				7CC14D912A3E280800B8B477 /* ContentView.swift */,
-				7CC14D9F2A3E2BAE00B8B477 /* AddUpdateItemView.swift */,
 				7CC14D932A3E280A00B8B477 /* Assets.xcassets */,
 				7CC14D952A3E280A00B8B477 /* Preview Content */,
-				7CC14DA12A3F18FD00B8B477 /* ToDoDetailsView.swift */,
 			);
 			path = TodoList;
 			sourceTree = "<group>";
@@ -74,6 +72,24 @@
 				7CC14D962A3E280A00B8B477 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7CC14DA32A3F1E1C00B8B477 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7CC14D912A3E280800B8B477 /* ContentView.swift */,
+				7CC14D9F2A3E2BAE00B8B477 /* AddUpdateItemView.swift */,
+				7CC14DA12A3F18FD00B8B477 /* ToDoDetailsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7CC14DA42A3F1E3A00B8B477 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7CC14D9D2A3E28F700B8B477 /* TodoListViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
