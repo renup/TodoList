@@ -28,6 +28,7 @@ struct ContentView: View {
             }
             .navigationTitle("Todo's")
             .navigationBarItems(trailing: Button(action: {
+                viewModel.updateTodo = false
                 presentSheet.toggle()
             }, label: {
                 Image(systemName: "plus")
@@ -41,10 +42,14 @@ struct ContentView: View {
     
     private func todoCell(_ item: ToDo) -> some View {
         HStack {
-            Circle()
-                .frame(width: 15, height: 15)
-                .background(item.completed ? Color.green : Color.red)
+            ZStack {
+                Color(item.completed ? .green : .red)
+            }
+            .frame(width: 15, height: 15)
+            .clipShape(Circle())
+            
             Text(item.title)
+            
             Spacer()
             ZStack {
                 Rectangle()

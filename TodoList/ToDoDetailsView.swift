@@ -28,8 +28,10 @@ struct ToDoDetailsView: View {
             viewModel.updateTodo = true
             presentSheet.toggle()
         }
+        .frame(width: 100, height: 50)
         .padding()
         .background(.green)
+        .foregroundColor(.white)
         .cornerRadius(10)
     }
     
@@ -41,8 +43,8 @@ struct ToDoDetailsView: View {
             Text("Mark Complete")
                 .foregroundColor(.white)
         }
+        .frame(width: 100, height: 50)
         .padding()
-        .frame(width: 80, height: 50)
         .background(.green)
         .cornerRadius(10)
     }

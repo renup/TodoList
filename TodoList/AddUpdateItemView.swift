@@ -39,8 +39,9 @@ struct AddUpdateItemView: View {
             Text(viewModel.updateTodo ? "Update" : "Add")
         }
         .padding()
-        .frame(width: 80, height: 50)
+        .frame(width: 100, height: 50)
         .background(.green)
+        .foregroundColor(.white)
         .cornerRadius(10)
     }
 }
