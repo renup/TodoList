@@ -13,6 +13,7 @@
 		7CC14D972A3E280A00B8B477 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CC14D962A3E280A00B8B477 /* Preview Assets.xcassets */; };
 		7CC14D9E2A3E28F700B8B477 /* TodoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC14D9D2A3E28F700B8B477 /* TodoListViewModel.swift */; };
 		7CC14DA02A3E2BAE00B8B477 /* AddUpdateItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC14D9F2A3E2BAE00B8B477 /* AddUpdateItemView.swift */; };
+		7CC14DA22A3F18FD00B8B477 /* ToDoDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC14DA12A3F18FD00B8B477 /* ToDoDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		7CC14D962A3E280A00B8B477 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7CC14D9D2A3E28F700B8B477 /* TodoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewModel.swift; sourceTree = "<group>"; };
 		7CC14D9F2A3E2BAE00B8B477 /* AddUpdateItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUpdateItemView.swift; sourceTree = "<group>"; };
+		7CC14DA12A3F18FD00B8B477 /* ToDoDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				7CC14D9F2A3E2BAE00B8B477 /* AddUpdateItemView.swift */,
 				7CC14D932A3E280A00B8B477 /* Assets.xcassets */,
 				7CC14D952A3E280A00B8B477 /* Preview Content */,
+				7CC14DA12A3F18FD00B8B477 /* ToDoDetailsView.swift */,
 			);
 			path = TodoList;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CC14D922A3E280800B8B477 /* ContentView.swift in Sources */,
+				7CC14DA22A3F18FD00B8B477 /* ToDoDetailsView.swift in Sources */,
 				7CC14D9E2A3E28F700B8B477 /* TodoListViewModel.swift in Sources */,
 				7CC14D902A3E280800B8B477 /* TodoListApp.swift in Sources */,
 				7CC14DA02A3E2BAE00B8B477 /* AddUpdateItemView.swift in Sources */,

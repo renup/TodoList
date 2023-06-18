@@ -21,19 +21,27 @@ struct AddUpdateItemView: View {
             TextField("Description", text: $description)
             
             Spacer()
-            Button {
-                // save to viewModel
-                if viewModel.updateTodo {
-                    viewModel.updateSelectedTodo(title: title, description: description)
-                } else {
-                    viewModel.addTodo(ToDo(title: title, description: description))
-                }
-                presentSheet.toggle()
-            } label: {
-                Text(viewModel.updateTodo ? "Update" : "Add")
-            }
+            addUpdateButton
         }
         .padding()
+    }
+    
+    private var addUpdateButton: some View {
+        Button {
+            // save to viewModel
+            if viewModel.updateTodo {
+                viewModel.updateSelectedTodo(title: title, description: description)
+            } else {
+                viewModel.addTodo(ToDo(title: title, description: description))
+            }
+            presentSheet.toggle()
+        } label: {
+            Text(viewModel.updateTodo ? "Update" : "Add")
+        }
+        .padding()
+        .frame(width: 80, height: 50)
+        .background(.green)
+        .cornerRadius(10)
     }
 }
 

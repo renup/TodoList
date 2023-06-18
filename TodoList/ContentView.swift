@@ -20,7 +20,7 @@ struct ContentView: View {
             VStack {
                 List(viewModel.todos) { item in
                     NavigationLink {
-                        detailsView(item)
+                        ToDoDetailsView(item: item, viewModel: viewModel, presentSheet: $presentSheet)
                     } label: {
                         todoCell(item)
                     }
@@ -41,6 +41,9 @@ struct ContentView: View {
     
     private func todoCell(_ item: ToDo) -> some View {
         HStack {
+            Circle()
+                .frame(width: 15, height: 15)
+                .background(item.completed ? Color.green : Color.red)
             Text(item.title)
             Spacer()
             ZStack {
@@ -57,22 +60,6 @@ struct ContentView: View {
             }
         }
     }
-    
-    private func detailsView(_ item: ToDo) -> some View {
-        VStack {
-            Text(item.description)
-            Button("Update") {
-                viewModel.selectedTodo = item
-                viewModel.updateTodo.toggle()
-                presentSheet.toggle()
-            }
-            .padding()
-            .background(.green)
-            .cornerRadius(10)
-                
-        }
-    }
-
 }
 
 struct ContentView_Previews: PreviewProvider {
