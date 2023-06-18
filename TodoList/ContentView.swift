@@ -22,7 +22,7 @@ struct ContentView: View {
                     NavigationLink {
                         detailsView(item)
                     } label: {
-                        Text(item.title)
+                        todoCell(item)
                     }
                 }
             }
@@ -35,6 +35,25 @@ struct ContentView: View {
             
             .sheet(isPresented: $presentSheet) {
                 AddUpdateItemView(presentSheet: $presentSheet, viewModel: viewModel)
+            }
+        }
+    }
+    
+    private func todoCell(_ item: ToDo) -> some View {
+        HStack {
+            Text(item.title)
+            Spacer()
+            ZStack {
+                Rectangle()
+                    .frame(width: 70, height: 30)
+                    .cornerRadius(10)
+                    .padding()
+                    .foregroundColor(.red)
+                    .onTapGesture {
+                        viewModel.delete(item)
+                    }
+                Text("Delete")
+                    .foregroundColor(.white)
             }
         }
     }
